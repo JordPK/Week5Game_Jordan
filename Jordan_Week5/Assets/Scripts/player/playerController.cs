@@ -114,12 +114,13 @@ public class playerController : MonoBehaviour
 
             // Resets player if they are out of bounds
             if (transform.position.y < -38f)
-        { 
-            // Sets random spawn point
+        {
+            gm.health = 0;
+            /*// Sets random spawn point
             Vector3 spawnPosition = new Vector3(Random.Range(-xRange, xRange), 1, (Random.Range(-zRange, zRange)));
 
             transform.SetPositionAndRotation(spawnPosition, transform.rotation);
-            rb.velocity = Vector3.zero;
+            rb.velocity = Vector3.zero;*/
             
         }
 
